@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Gp Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .attendance-cell {
+        color: red !important;overflow: hidden;
+    }
+    
+    .attendance tr:hover td{
+        transform: scale(1.1); /* Scale the element to 110% on hover */
+        transition: transform 0.2s; /* Add a smooth transition effect */  
+    }
+	td{
+	padding: 5px;	
+	}
+    button:hover {
+        transform: scale(1.1); /* Scale the button to 110% on hover */
+        transition: transform 0.2s; /* Add a smooth transition effect */
+    }
+</style>
+
+</head>
+<body id="bg-img">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Slcm<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="profile.html">Profile</a></li>
+          <li><a class="nav-link scrollto" href="course.html">Course & Enrollment Details</a></li>
+          <li><a class="nav-link scrollto active" href="attendance.html">Attendance</a></li>
+          <li><a class="nav-link scrollto" href="marks.html">Marks</a></li>
+          <li><a class="nav-link scrollto" href="feedback.html">Feedback</a></li>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#signIn" class="get-started-btn scrollto">Log Out</a>
+
+    </div>
+  </header><!-- End Header -->
+  
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up" style="width:100%; height:100%; float:inline-start">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8" style="display: flex; justify-content: center; width: 180%; height: 100%;">
+            <body>
+                    <!-- Table -->
+                    <div class="details-and-table" style="width: 100%; margin-top: 100px;">
+                        <!-- Student Details -->
+						<table style="width: 100%; background-color: rgba(244, 239, 239, 0.25); color: white; text-align:left;">
+							<tr>
+								<td>Year/Semester/Trimester:<select id="yearSemester" name="yearSemester">
+                                    <option value="1st Year">1st Year</option>
+                                </select></td>
+								<td>Roll No: 17</td>
+								<td align="right"><button>Show</button>
+                            <button>Print</button></td></tr>
+							<tr><td>Enrollment No: 230970084</td><td colspan="2">Name: VALINA</td></tr>
+						</table>
+						
+						<!--
+                        <div class="student-details" style="width: 100%; background-color: rgba(244, 239, 239, 0.25); position: relative; ">
+                          <div style="position: absolute; top: 10px; right: 10px;">
+                            
+                        </div>
+                            <div><p style="float:left; ">Year/Semester/Trimester:
+                                <select id="yearSemester" name="yearSemester">
+                                    <option value="1st Year">1st Year</option>
+                                </select><br><br><p style="float:center;">Roll No: 17</p>
+                            </p> </div><br><br>
+                            <div>
+                            <p></p>
+                            <p style="float:left;"></p></div>
+      
+                        </div><br>
+                        -->
+                    <div class="table-responsive attendance" style="overflow:hidden; margin-top: 10px;" >
+                        <table class="table table-bordered table-striped ">
+                            <thead  style="background-color:black; color: white;">
+                            <tr >
+                                <th>Academic Year</th>
+                                <th>Subject Code</th>
+                                <th>Subject</th>
+                                <th>Year/Sem</th>
+                                <th>Total Class</th>
+                                <th>Days Present</th>
+                                <th>Days Absent</th>
+                                <th>Attendance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2023-2024</td>
+                            <td>MAT 4111</td>
+                            <td>COMPUTATIONAL MATHEMATICS</td>
+                            <td>I</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td class="attendance-cell">0.00%</td>
+                        </tr>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>MCA 4121</td>
+                            <td>OBJECT ORIENTED PROGRAMMING - I</td>
+                            <td>I</td>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>2</td>
+                            <td>88.00%</td>
+                        </tr>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>MCA 4122</td>
+                            <td>DATABASE MANAGEMENT SYSTEM</td>
+                            <td>I</td>
+                            <td>33</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>91.00%</td>
+                        </tr>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>MCA 4123</td>
+                            <td>WEB TECHNOLOGIES</td>
+                            <td>I</td>
+                            <td>33</td>
+                            <td>32</td>
+                            <td>1</td>
+                            <td>97.00%</td>
+                        </tr>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>MCA 4141</td>
+                            <td>DATABASE MANAGEMENT SYSTEM LAB</td>
+                            <td>I</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>1</td>
+                            <td>89.00%</td>
+                        </tr>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>MCA 4142</td>
+                            <td>OBJECT ORIENTED PROGRAMMING LAB - I</td>
+                            <td>I</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td class="attendance-cell">0.00%</td>
+                        </tr>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>MCA 4143</td>
+                            <td>WEB TECHNOLOGIES LAB</td>
+                            <td>I</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td class="attendance-cell">0.00%</td>
+                        </tr>
+                            <!-- Add data rows here -->
+                        </tbody>
+                    </table>
+           
+            </div>
+            
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Slcm<span>.</span></h3>
+              <p>
+                MCA <br>
+                MIT, Manipal<br><br>
+                <strong>Phone:</strong> +91 0123-45-6789<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Profile</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Course & Enrollment</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Attendance</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marks</a></li>
+            </ul>
+          </div>
+<!--
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+        -->
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Keep Yourself Updated</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Slcm</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">Adarsh, Valina, Ankitha, Aman</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
